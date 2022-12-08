@@ -18,7 +18,7 @@
 			<td>Button</td>
 			</tr>
 	<?php
-		$cnx = new mysqli('localhost','root','WWP6happygoldcranes','HW7');
+		$cnx = new mysqli('localhost','root','pass','database');
 		if($cnx->connect_error)
 			die('Connection failed: '.$cnx->connect_error);
 		$query = 'select * from products';
