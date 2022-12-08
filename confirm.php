@@ -14,7 +14,7 @@
 		echo "<p>".$_POST['date']."</p>";
 		echo "<p>".$_POST['CVV']."</p>";
 		
-		$cnx = new mysqli('localhost','root','WWP6happygoldcranes','HW7');
+		$cnx = new mysqli('localhost','root','pass','database');
 		if($cnx->connect_error)
 			die('Connection failed: '.$cnx->connect_error);
 		$query = 'insert into client ( first_name, last_name, address, ccn, exp_date, cvv ) values ( "'.$_POST['name'].'","'.$_POST['lname'].'","'.$_POST['address'].'","'.$_POST['CCN'].'","'.$_POST['date'].'",'.$_POST['CVV'].')';
